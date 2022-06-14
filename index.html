@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Seed RECOGNITION</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <center>
+            <h1 id="kisan_mitan"><b>KISAN MITAN</b></h1>
+            <p id="krisi_vistar_kendra" style="font-size: 30px;">(Krisi Vistar Kendra)</p>
+            <h3 id="heading" class="btn btn-defult heading" style="font-size: 30px ;font-family: italic; color: black;">
+                <b>SEED RECOGNITION</b></h3>
+            <br><br>
+
+            <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+            <b class="name_of_object">
+                <p class="object">
+                    Bottle Ground
+                </p>
+                <hr>
+                <p class="object">
+                    Cucumber
+                </p>
+                <hr>
+                <p class="object">
+                    Brinjal
+                </p>
+                <hr>
+                <p class="object">
+                    Lady Finger
+                </p>
+                <hr>
+            </b>
+            <label>Webcam View - </label>
+            <div id="camera"></div>
+            <br><br>
+            <div id="result"></div>
+            <br><br>
+            <button onclick="take_snapshot();" class="btn btn-danger">Capture Image</button>
+            <br><br>
+            <button onclick="check();" class="btn btn-warning">Identify Image</button>
+            <br><br>
+
+            <p style="font-size: 22px;">Object : <span id="result_object_name"></span></p>
+            <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span></p>
+            <br><br>
+        </center>
+
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+<footer>
+    <div id="developer">Developed by - <b style="font-family: 'Playfair Display SC', serif; font-weight: bold;">Gaurav Coder</b>
+    </div>
+</footer>
+
+</html>

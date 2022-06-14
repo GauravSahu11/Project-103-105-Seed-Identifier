@@ -1,0 +1,43 @@
+body{
+    background-image: linear-gradient(aqua,blue);
+    color: white;
+    font-size: 20px;
+    padding: 0px;
+}
+.object{
+    background-color: rgb(75, 78, 75);
+    border-left:6px solid rgb(244, 7, 7);
+    width: 35%;
+}
+#camera{
+    border: 2px dashed black;
+    width: 300px;
+    height: 300px;
+}
+#developer{
+    color: white;
+}
+footer{
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    padding-right: 40px;
+}
+#kisan_mitan:hover{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+#kisan_mitan{
+    color: #4c15e3;
+    font-size: 40px;
+    font-family: italic;
+    font-weight: bold;
+}
+#krisi_vistar_kendra{
+    color: #4c15e3;
+}
